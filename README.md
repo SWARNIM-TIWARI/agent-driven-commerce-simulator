@@ -17,7 +17,7 @@ Different agents. Different priorities. Limited inventory. Competing merchants. 
 
 Each agent optimizes for its own objectives, but the consequences don't stay local. Their interactions can produce market-wide effects that no individual agent intended.
 
-**This isn't an AI shopping assistant. It's a laboratory for studying the behaviour of autonomous commerce.**
+**It's a laboratory for studying the behaviour of autonomous commerce.**
 
 > *Individual intelligence can produce unpredictable collective outcomes.*
 
