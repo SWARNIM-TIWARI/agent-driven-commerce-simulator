@@ -1,12 +1,12 @@
 <div align="center">
 
-# Agent-Driven Commerce Simulator
+# Agent Driven Commerce Simulator
 
 **Five autonomous buyers. One shared market. Unexpected consequences.**
 
 ![Next.js](https://img.shields.io/badge/Next.js_15-111?logo=nextdotjs) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff) ![PayPal Sandbox](https://img.shields.io/badge/PayPal-Sandbox-0070BA?logo=paypal&logoColor=fff) ![Tests](https://img.shields.io/badge/tests-49_passing-34D399) ![MIT](https://img.shields.io/badge/license-MIT-FF6B35)
 
-*Product name: **Commerce Wind Tunnel**: Test the economy before the economy runs itself.*
+*Product name: **Commerce Wind Tunnel** = Test the economy before the economy runs itself.*
 *Built for the PayPal AI Hackathon 2026.*
 
 </div>
