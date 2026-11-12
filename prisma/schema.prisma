@@ -1,0 +1,53 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Run {
+  id            String    @id
+  experimentId  String
+  seed          String
+  mode          String
+  status        String    @default("pending")
+  paypalMode    String
+  decisionTrace String?
+  metricsJson   String?
+  createdAt     DateTime  @default(now())
+  completedAt   DateTime?
+  errorMessage  String?
+  events        DbEvent[]
+  findings      DbFinding[]
+}
+
+model DbEvent {
+  id          String @id
+  runId       String
+  tick        Int
+  wallTime    BigInt
+  type        String
+  payload     String
+  agentId     String?
+  merchantId  String?
+  orderId     String?
+  run         Run    @relation(fields: [runId], references: [id], onDelete: Cascade)
+
+  @@index([runId])
+  @@index([runId, type])
+}
+
+model DbFinding {
+  id                    String   @id
+  runId                 String
+  type                  String
+  severity              String
+  title                 String
+  description           String
+  evidenceJson          String
+  suggestedIntervention String?
+  generatedAt           DateTime @default(now())
+  run                   Run      @relation(fields: [runId], references: [id], onDelete: Cascade)
+}

@@ -1,0 +1,31 @@
+{
+  "name": "commerce-wind-tunnel",
+  "version": "0.1.0",
+  "description": "An experimental environment for autonomous commerce agents running on PayPal infrastructure",
+  "scripts": {
+    "dev":             "next dev",
+    "build":           "next build",
+    "start":           "next start",
+    "simulate":        "tsx src/cli/simulate.ts",
+    "test":            "vitest run",
+    "typecheck":       "tsc --noEmit",
+    "db:push":         "prisma db push",
+    "db:generate":     "prisma generate"
+  },
+  "dependencies": {
+    "next":            "^15.0.0",
+    "react":           "^18.3.0",
+    "react-dom":       "^18.3.0",
+    "@prisma/client":  "^5.20.0",
+    "openai":          "^4.67.0"
+  },
+  "devDependencies": {
+    "@types/node":       "^20.12.0",
+    "@types/react":      "^18.3.0",
+    "@types/react-dom":  "^18.3.0",
+    "prisma":            "^5.20.0",
+    "tsx":               "^4.7.1",
+    "typescript":        "^5.4.3",
+    "vitest":            "^1.4.0"
+  }
+}
